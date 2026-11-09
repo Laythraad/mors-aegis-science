@@ -1,0 +1,274 @@
+{
+  "items": [
+    {
+      "sha256": "5b41e13f82fa73609c25d13e4cae946694aa6655768d1939ddd698e64b8f88aa",
+      "source_id": "gibs",
+      "source_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&TIME=2025-08-15&BBOX=-123%2C35%2C-117%2C42&SRS=EPSG%3A4326&LAYERS=MODIS_Terra_CorrectedReflectance_TrueColor&FORMAT=image%2Fpng&TRANSPARENT=TRUE&WIDTH=419&HEIGHT=625",
+      "product": "MODIS_Terra_CorrectedReflectance_TrueColor",
+      "query_json": "{\"bbox\": \"-123,35,-117,42\", \"crs\": \"EPSG:4326\", \"date_utc\": \"2025-08-15\", \"height_px\": 625, \"kind\": \"corrected_reflectance_snapshot\", \"layer\": \"MODIS_Terra_CorrectedReflectance_TrueColor\", \"sensor\": \"MODIS\", \"width_px\": 419}",
+      "content_type": "image/png",
+      "byte_count": 591533,
+      "ingested_at": "2026-11-07T04:16:45.010391-08:00",
+      "record_count": 1,
+      "validation_status": "NASA GIBS nonblank image archived; signature and 419x625 dimensions validated",
+      "download_url": "/api/data/raw-assets/5b41e13f82fa73609c25d13e4cae946694aa6655768d1939ddd698e64b8f88aa/download",
+      "query": {
+        "bbox": "-123,35,-117,42",
+        "crs": "EPSG:4326",
+        "date_utc": "2025-08-15",
+        "height_px": 625,
+        "kind": "corrected_reflectance_snapshot",
+        "layer": "MODIS_Terra_CorrectedReflectance_TrueColor",
+        "sensor": "MODIS",
+        "width_px": 419
+      }
+    },
+    {
+      "sha256": "531dc598d2e636160af6f321c700555862390479b85e359b7b6130e03eee6157",
+      "source_id": "gibs",
+      "source_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&TIME=2025-08-16&BBOX=-123%2C35%2C-117%2C42&SRS=EPSG%3A4326&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&FORMAT=image%2Fpng&TRANSPARENT=TRUE&WIDTH=419&HEIGHT=625",
+      "product": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+      "query_json": "{\"bbox\": \"-123,35,-117,42\", \"crs\": \"EPSG:4326\", \"date_utc\": \"2025-08-16\", \"height_px\": 625, \"kind\": \"corrected_reflectance_snapshot\", \"layer\": \"VIIRS_SNPP_CorrectedReflectance_TrueColor\", \"sensor\": \"VIIRS\", \"width_px\": 419}",
+      "content_type": "image/png",
+      "byte_count": 621164,
+      "ingested_at": "2026-11-07T04:16:43.91126-08:00",
+      "record_count": 1,
+      "validation_status": "NASA GIBS nonblank image archived; signature and 419x625 dimensions validated",
+      "download_url": "/api/data/raw-assets/531dc598d2e636160af6f321c700555862390479b85e359b7b6130e03eee6157/download",
+      "query": {
+        "bbox": "-123,35,-117,42",
+        "crs": "EPSG:4326",
+        "date_utc": "2025-08-16",
+        "height_px": 625,
+        "kind": "corrected_reflectance_snapshot",
+        "layer": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+        "sensor": "VIIRS",
+        "width_px": 419
+      }
+    },
+    {
+      "sha256": "90fb706c54710a2782cffa575ce9da862b5c28b2be290e344aa60ff1802e440e",
+      "source_id": "gibs",
+      "source_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&TIME=2025-08-14&BBOX=-123%2C35%2C-117%2C42&SRS=EPSG%3A4326&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&FORMAT=image%2Fpng&TRANSPARENT=TRUE&WIDTH=419&HEIGHT=625",
+      "product": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+      "query_json": "{\"bbox\": \"-123,35,-117,42\", \"crs\": \"EPSG:4326\", \"date_utc\": \"2025-08-14\", \"height_px\": 625, \"kind\": \"corrected_reflectance_snapshot\", \"layer\": \"VIIRS_SNPP_CorrectedReflectance_TrueColor\", \"sensor\": \"VIIRS\", \"width_px\": 419}",
+      "content_type": "image/png",
+      "byte_count": 609055,
+      "ingested_at": "2026-11-07T04:16:42.212111-08:00",
+      "record_count": 1,
+      "validation_status": "NASA GIBS nonblank image archived; signature and 419x625 dimensions validated",
+      "download_url": "/api/data/raw-assets/90fb706c54710a2782cffa575ce9da862b5c28b2be290e344aa60ff1802e440e/download",
+      "query": {
+        "bbox": "-123,35,-117,42",
+        "crs": "EPSG:4326",
+        "date_utc": "2025-08-14",
+        "height_px": 625,
+        "kind": "corrected_reflectance_snapshot",
+        "layer": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+        "sensor": "VIIRS",
+        "width_px": 419
+      }
+    },
+    {
+      "sha256": "810854f18457617b680e06914265187ccba13dde5f6d28db92609e4367feb396",
+      "source_id": "firms",
+      "source_url": "https://firms.modaps.eosdis.nasa.gov/api/area/csv/[REDACTED]/VIIRS_NOAA20_NRT/world/1",
+      "product": "VIIRS_NOAA20_NRT",
+      "query_json": "{\"bbox\": \"world\", \"crs\": \"EPSG:4326\", \"days\": 1, \"product\": \"VIIRS_NOAA20_NRT\"}",
+      "content_type": "text/csv; charset=utf-8",
+      "byte_count": 1178241,
+      "ingested_at": "2026-11-07T03:47:29.495432-08:00",
+      "record_count": 14146,
+      "validation_status": "Source checksum recorded; schema parsed",
+      "download_url": "/api/data/raw-assets/810854f18457617b680e06914265187ccba13dde5f6d28db92609e4367feb396/download",
+      "query": {
+        "bbox": "world",
+        "crs": "EPSG:4326",
+        "days": 1,
+        "product": "VIIRS_NOAA20_NRT"
+      }
+    },
+    {
+      "sha256": "2b11a44667d05367ecf77651b95fd3d34c545c7ec154856094b91245e41ae697",
+      "source_id": "firms",
+      "source_url": "https://firms.modaps.eosdis.nasa.gov/api/area/csv/[REDACTED]/VIIRS_SNPP_NRT/-119,33,-118,34/1",
+      "product": "VIIRS_SNPP_NRT",
+      "query_json": "{\"bbox\": \"-119,33,-118,34\", \"crs\": \"EPSG:4326\", \"days\": 1, \"product\": \"VIIRS_SNPP_NRT\"}",
+      "content_type": "text/csv; charset=utf-8",
+      "byte_count": 122,
+      "ingested_at": "2026-11-07T03:16:57.717211-08:00",
+      "record_count": 0,
+      "validation_status": "Source checksum recorded; schema parsed",
+      "download_url": "/api/data/raw-assets/2b11a44667d05367ecf77651b95fd3d34c545c7ec154856094b91245e41ae697/download",
+      "query": {
+        "bbox": "-119,33,-118,34",
+        "crs": "EPSG:4326",
+        "days": 1,
+        "product": "VIIRS_SNPP_NRT"
+      }
+    },
+    {
+      "sha256": "659f57a037bf8444dd89f8d791d5413e11b19ad058508771820c2f973df24047",
+      "source_id": "gibs",
+      "source_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&TIME=2025-08-15&BBOX=-123%2C35%2C-117%2C42&SRS=EPSG%3A4326&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&FORMAT=image%2Fpng&TRANSPARENT=TRUE&WIDTH=419&HEIGHT=625",
+      "product": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+      "query_json": "{\"bbox\": \"-123,35,-117,42\", \"crs\": \"EPSG:4326\", \"date_utc\": \"2025-08-15\", \"height_px\": 625, \"kind\": \"corrected_reflectance_snapshot\", \"layer\": \"VIIRS_SNPP_CorrectedReflectance_TrueColor\", \"sensor\": \"VIIRS\", \"width_px\": 419}",
+      "content_type": "image/png",
+      "byte_count": 613539,
+      "ingested_at": "2026-11-07T03:15:03.85647-08:00",
+      "record_count": 1,
+      "validation_status": "NASA GIBS nonblank image archived; signature and 419x625 dimensions validated",
+      "download_url": "/api/data/raw-assets/659f57a037bf8444dd89f8d791d5413e11b19ad058508771820c2f973df24047/download",
+      "query": {
+        "bbox": "-123,35,-117,42",
+        "crs": "EPSG:4326",
+        "date_utc": "2025-08-15",
+        "height_px": 625,
+        "kind": "corrected_reflectance_snapshot",
+        "layer": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+        "sensor": "VIIRS",
+        "width_px": 419
+      }
+    },
+    {
+      "sha256": "6722b86e51de63d486cd13046c080cbb112a565214c7f397a54b471d9ce6a373",
+      "source_id": "gibs",
+      "source_url": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&TIME=2025-08-15&BBOX=-123%2C35%2C-117%2C42&CRS=EPSG%3A4326&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&FORMAT=image%2Fjpeg&WIDTH=419&HEIGHT=625",
+      "product": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+      "query_json": "{\"bbox\": \"-123,35,-117,42\", \"crs\": \"EPSG:4326\", \"date_utc\": \"2025-08-15\", \"height_px\": 625, \"kind\": \"corrected_reflectance_snapshot\", \"layer\": \"VIIRS_SNPP_CorrectedReflectance_TrueColor\", \"sensor\": \"VIIRS\", \"width_px\": 419}",
+      "content_type": "image/jpeg",
+      "byte_count": 1904,
+      "ingested_at": "2026-11-07T03:13:21.650784-08:00",
+      "record_count": 1,
+      "validation_status": "REJECTED: blank black image from legacy snapshot endpoint",
+      "download_url": "/api/data/raw-assets/6722b86e51de63d486cd13046c080cbb112a565214c7f397a54b471d9ce6a373/download",
+      "query": {
+        "bbox": "-123,35,-117,42",
+        "crs": "EPSG:4326",
+        "date_utc": "2025-08-15",
+        "height_px": 625,
+        "kind": "corrected_reflectance_snapshot",
+        "layer": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+        "sensor": "VIIRS",
+        "width_px": 419
+      }
+    },
+    {
+      "sha256": "e166f6da08bbfe4c5ee834e101bf6b2c384acbc2e9ebd94f80a6797d50a17b81",
+      "source_id": "gibs",
+      "source_url": "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&TIME=2026-11-06&BBOX=-119%2C33%2C-118%2C34&CRS=EPSG%3A4326&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&FORMAT=image%2Fjpeg&WIDTH=468&HEIGHT=561",
+      "product": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+      "query_json": "{\"bbox\": \"-119,33,-118,34\", \"crs\": \"EPSG:4326\", \"date_utc\": \"2026-11-06\", \"height_px\": 561, \"kind\": \"corrected_reflectance_snapshot\", \"layer\": \"VIIRS_SNPP_CorrectedReflectance_TrueColor\", \"sensor\": \"VIIRS\", \"width_px\": 468}",
+      "content_type": "image/jpeg",
+      "byte_count": 1904,
+      "ingested_at": "2026-11-07T03:13:00.733534-08:00",
+      "record_count": 1,
+      "validation_status": "REJECTED: blank black image from legacy snapshot endpoint",
+      "download_url": "/api/data/raw-assets/e166f6da08bbfe4c5ee834e101bf6b2c384acbc2e9ebd94f80a6797d50a17b81/download",
+      "query": {
+        "bbox": "-119,33,-118,34",
+        "crs": "EPSG:4326",
+        "date_utc": "2026-11-06",
+        "height_px": 561,
+        "kind": "corrected_reflectance_snapshot",
+        "layer": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+        "sensor": "VIIRS",
+        "width_px": 468
+      }
+    },
+    {
+      "sha256": "f7c2b7322aacc531137735c7826169ebea5adc1d2c30724c7880c3a65fe91243",
+      "source_id": "ntrs",
+      "source_url": "https://ntrs.nasa.gov/api/citations/search?q=solid+fuel+smoldering+microgravity&page.size=50",
+      "product": "NTRS citation search",
+      "query_json": "{\"endpoint\": \"https://ntrs.nasa.gov/api/citations/search\", \"page_size\": 50, \"query\": \"solid fuel smoldering microgravity\"}",
+      "content_type": "application/json",
+      "byte_count": 257131,
+      "ingested_at": "2026-11-07T03:12:07.296056-08:00",
+      "record_count": 11,
+      "validation_status": "NASA citation JSON parsed; exact response archived",
+      "download_url": "/api/data/raw-assets/f7c2b7322aacc531137735c7826169ebea5adc1d2c30724c7880c3a65fe91243/download",
+      "query": {
+        "endpoint": "https://ntrs.nasa.gov/api/citations/search",
+        "page_size": 50,
+        "query": "solid fuel smoldering microgravity"
+      }
+    },
+    {
+      "sha256": "9d4c98fc87d5dfb04d4c8db4768e90e78b3f6ead6c2b6165ae613a2a40c34300",
+      "source_id": "ntrs",
+      "source_url": "https://ntrs.nasa.gov/api/citations/search?q=ISS+combustion+experiment&page.size=50",
+      "product": "NTRS citation search",
+      "query_json": "{\"endpoint\": \"https://ntrs.nasa.gov/api/citations/search\", \"page_size\": 50, \"query\": \"ISS combustion experiment\"}",
+      "content_type": "application/json",
+      "byte_count": 359913,
+      "ingested_at": "2026-11-07T03:12:05.050597-08:00",
+      "record_count": 50,
+      "validation_status": "NASA citation JSON parsed; exact response archived",
+      "download_url": "/api/data/raw-assets/9d4c98fc87d5dfb04d4c8db4768e90e78b3f6ead6c2b6165ae613a2a40c34300/download",
+      "query": {
+        "endpoint": "https://ntrs.nasa.gov/api/citations/search",
+        "page_size": 50,
+        "query": "ISS combustion experiment"
+      }
+    },
+    {
+      "sha256": "ddf2744b5c31f95ce36a6803bd56ed33bcb3d6df6c8626504dfb0fa82d2e8b96",
+      "source_id": "ntrs",
+      "source_url": "https://ntrs.nasa.gov/api/citations/search?q=flame+spread+microgravity&page.size=50",
+      "product": "NTRS citation search",
+      "query_json": "{\"endpoint\": \"https://ntrs.nasa.gov/api/citations/search\", \"page_size\": 50, \"query\": \"flame spread microgravity\"}",
+      "content_type": "application/json",
+      "byte_count": 255637,
+      "ingested_at": "2026-11-07T03:12:02.090433-08:00",
+      "record_count": 50,
+      "validation_status": "NASA citation JSON parsed; exact response archived",
+      "download_url": "/api/data/raw-assets/ddf2744b5c31f95ce36a6803bd56ed33bcb3d6df6c8626504dfb0fa82d2e8b96/download",
+      "query": {
+        "endpoint": "https://ntrs.nasa.gov/api/citations/search",
+        "page_size": 50,
+        "query": "flame spread microgravity"
+      }
+    },
+    {
+      "sha256": "2e5b5c10154f06845cd9fa1ef303a3a59e8dadf3a610509a45193fdca61062d6",
+      "source_id": "ntrs",
+      "source_url": "https://ntrs.nasa.gov/api/citations/search?q=spacecraft+fire+safety&page.size=50",
+      "product": "NTRS citation search",
+      "query_json": "{\"endpoint\": \"https://ntrs.nasa.gov/api/citations/search\", \"page_size\": 50, \"query\": \"spacecraft fire safety\"}",
+      "content_type": "application/json",
+      "byte_count": 282542,
+      "ingested_at": "2026-11-07T03:11:59.738785-08:00",
+      "record_count": 50,
+      "validation_status": "NASA citation JSON parsed; exact response archived",
+      "download_url": "/api/data/raw-assets/2e5b5c10154f06845cd9fa1ef303a3a59e8dadf3a610509a45193fdca61062d6/download",
+      "query": {
+        "endpoint": "https://ntrs.nasa.gov/api/citations/search",
+        "page_size": 50,
+        "query": "spacecraft fire safety"
+      }
+    },
+    {
+      "sha256": "a3bb138738403f1fb79d6575034f376a56d7a5b47b6d4c329c3950d99cec7097",
+      "source_id": "ntrs",
+      "source_url": "https://ntrs.nasa.gov/api/citations/search?q=microgravity+combustion&page.size=50",
+      "product": "NTRS citation search",
+      "query_json": "{\"endpoint\": \"https://ntrs.nasa.gov/api/citations/search\", \"page_size\": 50, \"query\": \"microgravity combustion\"}",
+      "content_type": "application/json",
+      "byte_count": 394238,
+      "ingested_at": "2026-11-07T03:11:57.404456-08:00",
+      "record_count": 50,
+      "validation_status": "NASA citation JSON parsed; exact response archived",
+      "download_url": "/api/data/raw-assets/a3bb138738403f1fb79d6575034f376a56d7a5b47b6d4c329c3950d99cec7097/download",
+      "query": {
+        "endpoint": "https://ntrs.nasa.gov/api/citations/search",
+        "page_size": 50,
+        "query": "microgravity combustion"
+      }
+    }
+  ],
+  "total": 13,
+  "limit": 100,
+  "offset": 0,
+  "notice": "Original provider responses are kept as content-addressed files; this table is their provenance index."
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07111a"><meta name="description" content="MORS AEGIS — scientific intelligence for microgravity combustion and spacecraft fire research.">
+  <title>MORS AEGIS | Mission Intelligence</title>
+  <link rel="icon" href="/mors-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/theme.css"><link rel="stylesheet" href="/accessibility.css"><link rel="stylesheet" href="/workbench.css">
+</head>
+<body>
+<a class="skip-link" href="#view-content">Skip to main content</a>
+<noscript><p class="noscript">Enable JavaScript to use the MORS scientific interface.</p></noscript>
+<div id="auth-gate" class="auth-gate" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+  <form id="auth-form" class="auth-card">
+    <img src="/mors-logo.svg" width="64" height="64" alt="">
+    <h1 id="auth-title">MORS AEGIS access</h1>
+    <p>Enter the local access token configured for this installation.</p>
+    <label for="auth-token">Access token</label>
+    <input id="auth-token" name="token" type="password" autocomplete="off" required>
+    <button class="button" type="submit">Unlock workspace</button>
+    <p id="auth-error" role="alert"></p>
+  </form>
+</div>
+<div class="shell" inert>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#mission" aria-label="MORS AEGIS Mission Control"><span class="brand-logo" role="img" aria-label="MORS logo"></span><span><strong>MORS <b>AEGIS</b></strong><small>SPACE FIRE INTELLIGENCE</small></span></a>
+    <div class="nav-caption">MISSION SYSTEMS</div>
+    <nav class="navigation" aria-label="Primary navigation">
+      <a class="nav-item active" href="#mission" data-view="mission"><span class="nav-icon">◈</span> Mission Control <span class="nav-num">01</span></a>
+      <a class="nav-item" href="#experiments" data-view="experiments"><span class="nav-icon">◎</span> Experiment Universe <span class="nav-num">02</span></a>
+      <a class="nav-item" href="#data" data-view="data"><span class="nav-icon">▤</span> Scientific Data Explorer <span class="nav-num">03</span></a>
+      <a class="nav-item" href="#gallery" data-view="gallery"><span class="nav-icon">▦</span> Science Gallery <span class="nav-num">04</span></a>
+      <a class="nav-item" href="#archive" data-view="archive"><span class="nav-icon">▣</span> Raw Data Vault <span class="nav-num">05</span></a>
+      <a class="nav-item" href="#spacetime" data-view="spacetime"><span class="nav-icon">⌖</span> Space-Time Explorer <span class="nav-num">06</span></a>
+      <a class="nav-item" href="#quantum" data-view="quantum"><span class="nav-icon">⟐</span> Quantum Lab <span class="nav-num">07</span></a>
+      <a class="nav-item" href="#combustion" data-view="combustion"><span class="nav-icon">◉</span> Combustion Lab <span class="nav-num">08</span></a>
+      <a class="nav-item" href="#intelligence" data-view="intelligence"><span class="nav-icon">⌘</span> AI Intelligence <span class="nav-num">09</span></a>
+      <a class="nav-item" href="#earth" data-view="earth"><span class="nav-icon">⊕</span> Earth Fire Observatory <span class="nav-num">10</span></a>
+      <a class="nav-item" href="#environment" data-view="environment"><span class="nav-icon">◌</span> Space Environment <span class="nav-num">11</span></a>
+      <a class="nav-item" href="#twin" data-view="twin"><span class="nav-icon">⌬</span> Digital Twin <span class="nav-num">12</span></a>
+      <a class="nav-item" href="#safety" data-view="safety"><span class="nav-icon">⛨</span> Safety Intelligence <span class="nav-num">13</span></a>
+      <a class="nav-item" href="#research" data-view="research"><span class="nav-icon">⌕</span> Research Explorer <span class="nav-num">14</span></a>
+      <a class="nav-item" href="#architecture" data-view="architecture"><span class="nav-icon">⌘</span> System Architecture <span class="nav-num">15</span></a>
+      <a class="nav-item" href="#methodology" data-view="methodology"><span class="nav-icon">⊞</span> Methodology <span class="nav-num">16</span></a>
+      <a class="nav-item" href="#about" data-view="about"><span class="nav-icon">✳</span> About MORS <span class="nav-num">17</span></a>
+      <a class="nav-item" href="#pitch" data-view="pitch"><span class="nav-icon">✦</span> Project Brief <span class="nav-num">18</span></a>
+    </nav>
+    <div class="sidebar-bottom"><div class="sidebar-status"><span class="status-dot amber"></span><span>EXTERNAL DATA</span><span class="status-label">PARTIAL</span></div><div class="sidebar-foot">NASA SPACE APPS CHALLENGE<br>FLAME IN FREEFALL · 2026</div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button class="mobile-menu" id="menu-toggle" aria-label="Toggle navigation" aria-controls="sidebar" aria-expanded="false">☰</button><div class="breadcrumb"><span>AEGIS PLATFORM</span><i>/</i><strong id="crumb">MISSION CONTROL</strong></div><div class="top-actions"><span class="utc-clock" id="clock">UTC 00:00:00</span><span class="top-divider"></span><span class="team-chip"><span class="status-dot green"></span> TEAM MORS</span><label class="theme-control" for="theme-select">THEME <select id="theme-select" aria-label="Choose appearance theme"><option value="mors">MORS</option><option value="ocean">Ocean</option><option value="ember">Ember</option><option value="light">Light</option></select></label><label class="language-control" for="language-select"><span>LANGUAGE</span><select id="language-select" aria-label="Choose language"><option value="en">English</option><option value="ar">العربية</option></select></label><button class="avatar" id="logout" aria-label="Sign out">↪</button></div></header>
+    <div class="content" id="view-content" tabindex="-1"></div>
+    <footer class="footer"><span>AEGIS SCIENTIFIC INTELLIGENCE PLATFORM</span><span>OBSERVE WITH EVIDENCE <i>·</i> DISTINGUISH UNCERTAINTY</span></footer>
+  </main>
+</div>
+<button id="menu-backdrop" class="menu-backdrop" aria-label="Close navigation" hidden></button>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="/i18n.js" defer></script>
+<script src="/earth-globe.js" defer></script>
+<script src="/workbench.js" defer></script>
+<script src="/bass-lab.js" defer></script>
+<script src="/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.git
+.gitignore
+.env
+.env.*
+*.env
+*.env.txt
+.env.txt
+!.env.example
+**/__pycache__
+**/*.py[cod]
+.pytest_cache
+.venv
+venv
+opencode-skills

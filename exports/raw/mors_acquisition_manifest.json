@@ -1,0 +1,223 @@
+{
+  "items": [
+    {
+      "id": "4ad91c80-cc87-40d5-8c85-57b5adc6268f",
+      "raw_sha256": "810854f18457617b680e06914265187ccba13dde5f6d28db92609e4367feb396",
+      "source_id": "firms",
+      "fetched_at": "2026-11-07T03:47:29.495432-08:00",
+      "request_json": "{\"bbox\": \"world\", \"crs\": \"EPSG:4326\", \"days\": 1, \"product\": \"VIIRS_NOAA20_NRT\"}",
+      "record_count": 14146,
+      "validation_status": "FIRMS CSV parsed; unchanged bytes archived",
+      "product": "VIIRS_NOAA20_NRT",
+      "content_type": "text/csv; charset=utf-8",
+      "byte_count": 1178241,
+      "request": {
+        "bbox": "world",
+        "crs": "EPSG:4326",
+        "days": 1,
+        "product": "VIIRS_NOAA20_NRT"
+      },
+      "download_url": "/api/data/raw-assets/810854f18457617b680e06914265187ccba13dde5f6d28db92609e4367feb396/download"
+    },
+    {
+      "id": "96d15929-455e-428f-9129-e8a9c1578a83",
+      "raw_sha256": "2b11a44667d05367ecf77651b95fd3d34c545c7ec154856094b91245e41ae697",
+      "source_id": "firms",
+      "fetched_at": "2026-11-07T03:17:15.476287-08:00",
+      "request_json": "{\"bbox\": \"-65,-10,-55,0\", \"crs\": \"EPSG:4326\", \"days\": 5, \"product\": \"VIIRS_SNPP_NRT\"}",
+      "record_count": 0,
+      "validation_status": "FIRMS CSV parsed; unchanged bytes archived",
+      "product": "VIIRS_SNPP_NRT",
+      "content_type": "text/csv; charset=utf-8",
+      "byte_count": 122,
+      "request": {
+        "bbox": "-65,-10,-55,0",
+        "crs": "EPSG:4326",
+        "days": 5,
+        "product": "VIIRS_SNPP_NRT"
+      },
+      "download_url": "/api/data/raw-assets/2b11a44667d05367ecf77651b95fd3d34c545c7ec154856094b91245e41ae697/download"
+    },
+    {
+      "id": "2ed5aaab-1aeb-4329-adf8-874ce8da1e0e",
+      "raw_sha256": "2b11a44667d05367ecf77651b95fd3d34c545c7ec154856094b91245e41ae697",
+      "source_id": "firms",
+      "fetched_at": "2026-11-07T03:16:57.717211-08:00",
+      "request_json": "{\"bbox\": \"-119,33,-118,34\", \"crs\": \"EPSG:4326\", \"days\": 1, \"product\": \"VIIRS_SNPP_NRT\"}",
+      "record_count": 0,
+      "validation_status": "FIRMS CSV parsed; unchanged bytes archived",
+      "product": "VIIRS_SNPP_NRT",
+      "content_type": "text/csv; charset=utf-8",
+      "byte_count": 122,
+      "request": {
+        "bbox": "-119,33,-118,34",
+        "crs": "EPSG:4326",
+        "days": 1,
+        "product": "VIIRS_SNPP_NRT"
+      },
+      "download_url": "/api/data/raw-assets/2b11a44667d05367ecf77651b95fd3d34c545c7ec154856094b91245e41ae697/download"
+    },
+    {
+      "id": "f29e72a0-367c-43e9-97d3-df98154a995e",
+      "raw_sha256": "659f57a037bf8444dd89f8d791d5413e11b19ad058508771820c2f973df24047",
+      "source_id": "gibs",
+      "fetched_at": "2026-11-07T03:15:03.85647-08:00",
+      "request_json": "{\"bbox\": \"-123,35,-117,42\", \"crs\": \"EPSG:4326\", \"date_utc\": \"2025-08-15\", \"height_px\": 625, \"kind\": \"corrected_reflectance_snapshot\", \"layer\": \"VIIRS_SNPP_CorrectedReflectance_TrueColor\", \"sensor\": \"VIIRS\", \"width_px\": 419}",
+      "record_count": 1,
+      "validation_status": "NASA GIBS nonblank image archived; signature and 419x625 dimensions validated",
+      "product": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+      "content_type": "image/png",
+      "byte_count": 613539,
+      "request": {
+        "bbox": "-123,35,-117,42",
+        "crs": "EPSG:4326",
+        "date_utc": "2025-08-15",
+        "height_px": 625,
+        "kind": "corrected_reflectance_snapshot",
+        "layer": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+        "sensor": "VIIRS",
+        "width_px": 419
+      },
+      "download_url": "/api/data/raw-assets/659f57a037bf8444dd89f8d791d5413e11b19ad058508771820c2f973df24047/download"
+    },
+    {
+      "id": "fae7ad56-41d8-4e5d-958e-350411b1ea43",
+      "raw_sha256": "6722b86e51de63d486cd13046c080cbb112a565214c7f397a54b471d9ce6a373",
+      "source_id": "gibs",
+      "fetched_at": "2026-11-07T03:13:21.650784-08:00",
+      "request_json": "{\"bbox\": \"-123,35,-117,42\", \"crs\": \"EPSG:4326\", \"date_utc\": \"2025-08-15\", \"height_px\": 625, \"kind\": \"corrected_reflectance_snapshot\", \"layer\": \"VIIRS_SNPP_CorrectedReflectance_TrueColor\", \"sensor\": \"VIIRS\", \"width_px\": 419}",
+      "record_count": 1,
+      "validation_status": "Rejected after raster content validation: blank black image",
+      "product": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+      "content_type": "image/jpeg",
+      "byte_count": 1904,
+      "request": {
+        "bbox": "-123,35,-117,42",
+        "crs": "EPSG:4326",
+        "date_utc": "2025-08-15",
+        "height_px": 625,
+        "kind": "corrected_reflectance_snapshot",
+        "layer": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+        "sensor": "VIIRS",
+        "width_px": 419
+      },
+      "download_url": "/api/data/raw-assets/6722b86e51de63d486cd13046c080cbb112a565214c7f397a54b471d9ce6a373/download"
+    },
+    {
+      "id": "4378242d-bfde-4054-9d78-3cd4c304aa1f",
+      "raw_sha256": "e166f6da08bbfe4c5ee834e101bf6b2c384acbc2e9ebd94f80a6797d50a17b81",
+      "source_id": "gibs",
+      "fetched_at": "2026-11-07T03:13:00.733534-08:00",
+      "request_json": "{\"bbox\": \"-119,33,-118,34\", \"crs\": \"EPSG:4326\", \"date_utc\": \"2026-11-06\", \"height_px\": 561, \"kind\": \"corrected_reflectance_snapshot\", \"layer\": \"VIIRS_SNPP_CorrectedReflectance_TrueColor\", \"sensor\": \"VIIRS\", \"width_px\": 468}",
+      "record_count": 1,
+      "validation_status": "Rejected after raster content validation: blank black image",
+      "product": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+      "content_type": "image/jpeg",
+      "byte_count": 1904,
+      "request": {
+        "bbox": "-119,33,-118,34",
+        "crs": "EPSG:4326",
+        "date_utc": "2026-11-06",
+        "height_px": 561,
+        "kind": "corrected_reflectance_snapshot",
+        "layer": "VIIRS_SNPP_CorrectedReflectance_TrueColor",
+        "sensor": "VIIRS",
+        "width_px": 468
+      },
+      "download_url": "/api/data/raw-assets/e166f6da08bbfe4c5ee834e101bf6b2c384acbc2e9ebd94f80a6797d50a17b81/download"
+    },
+    {
+      "id": "a136ec98-e6a0-4109-8d7a-ec0056983561",
+      "raw_sha256": "f7c2b7322aacc531137735c7826169ebea5adc1d2c30724c7880c3a65fe91243",
+      "source_id": "ntrs",
+      "fetched_at": "2026-11-07T03:12:07.296056-08:00",
+      "request_json": "{\"endpoint\": \"https://ntrs.nasa.gov/api/citations/search\", \"page_size\": 50, \"query\": \"solid fuel smoldering microgravity\"}",
+      "record_count": 11,
+      "validation_status": "NASA NTRS citation metadata archived",
+      "product": "NTRS citation search",
+      "content_type": "application/json",
+      "byte_count": 257131,
+      "request": {
+        "endpoint": "https://ntrs.nasa.gov/api/citations/search",
+        "page_size": 50,
+        "query": "solid fuel smoldering microgravity"
+      },
+      "download_url": "/api/data/raw-assets/f7c2b7322aacc531137735c7826169ebea5adc1d2c30724c7880c3a65fe91243/download"
+    },
+    {
+      "id": "8c20afc0-aa0c-4070-a1d9-896d3e1b1524",
+      "raw_sha256": "9d4c98fc87d5dfb04d4c8db4768e90e78b3f6ead6c2b6165ae613a2a40c34300",
+      "source_id": "ntrs",
+      "fetched_at": "2026-11-07T03:12:05.050597-08:00",
+      "request_json": "{\"endpoint\": \"https://ntrs.nasa.gov/api/citations/search\", \"page_size\": 50, \"query\": \"ISS combustion experiment\"}",
+      "record_count": 50,
+      "validation_status": "NASA NTRS citation metadata archived",
+      "product": "NTRS citation search",
+      "content_type": "application/json",
+      "byte_count": 359913,
+      "request": {
+        "endpoint": "https://ntrs.nasa.gov/api/citations/search",
+        "page_size": 50,
+        "query": "ISS combustion experiment"
+      },
+      "download_url": "/api/data/raw-assets/9d4c98fc87d5dfb04d4c8db4768e90e78b3f6ead6c2b6165ae613a2a40c34300/download"
+    },
+    {
+      "id": "f537bb60-8d10-4e39-af6d-8ffe86354ec6",
+      "raw_sha256": "ddf2744b5c31f95ce36a6803bd56ed33bcb3d6df6c8626504dfb0fa82d2e8b96",
+      "source_id": "ntrs",
+      "fetched_at": "2026-11-07T03:12:02.090433-08:00",
+      "request_json": "{\"endpoint\": \"https://ntrs.nasa.gov/api/citations/search\", \"page_size\": 50, \"query\": \"flame spread microgravity\"}",
+      "record_count": 50,
+      "validation_status": "NASA NTRS citation metadata archived",
+      "product": "NTRS citation search",
+      "content_type": "application/json",
+      "byte_count": 255637,
+      "request": {
+        "endpoint": "https://ntrs.nasa.gov/api/citations/search",
+        "page_size": 50,
+        "query": "flame spread microgravity"
+      },
+      "download_url": "/api/data/raw-assets/ddf2744b5c31f95ce36a6803bd56ed33bcb3d6df6c8626504dfb0fa82d2e8b96/download"
+    },
+    {
+      "id": "7ef17714-8131-4a2e-a4f0-7ab32876d066",
+      "raw_sha256": "2e5b5c10154f06845cd9fa1ef303a3a59e8dadf3a610509a45193fdca61062d6",
+      "source_id": "ntrs",
+      "fetched_at": "2026-11-07T03:11:59.738785-08:00",
+      "request_json": "{\"endpoint\": \"https://ntrs.nasa.gov/api/citations/search\", \"page_size\": 50, \"query\": \"spacecraft fire safety\"}",
+      "record_count": 50,
+      "validation_status": "NASA NTRS citation metadata archived",
+      "product": "NTRS citation search",
+      "content_type": "application/json",
+      "byte_count": 282542,
+      "request": {
+        "endpoint": "https://ntrs.nasa.gov/api/citations/search",
+        "page_size": 50,
+        "query": "spacecraft fire safety"
+      },
+      "download_url": "/api/data/raw-assets/2e5b5c10154f06845cd9fa1ef303a3a59e8dadf3a610509a45193fdca61062d6/download"
+    },
+    {
+      "id": "cd450dea-168a-4e49-a0ed-8ae57081eed7",
+      "raw_sha256": "a3bb138738403f1fb79d6575034f376a56d7a5b47b6d4c329c3950d99cec7097",
+      "source_id": "ntrs",
+      "fetched_at": "2026-11-07T03:11:57.404456-08:00",
+      "request_json": "{\"endpoint\": \"https://ntrs.nasa.gov/api/citations/search\", \"page_size\": 50, \"query\": \"microgravity combustion\"}",
+      "record_count": 50,
+      "validation_status": "NASA NTRS citation metadata archived",
+      "product": "NTRS citation search",
+      "content_type": "application/json",
+      "byte_count": 394238,
+      "request": {
+        "endpoint": "https://ntrs.nasa.gov/api/citations/search",
+        "page_size": 50,
+        "query": "microgravity combustion"
+      },
+      "download_url": "/api/data/raw-assets/a3bb138738403f1fb79d6575034f376a56d7a5b47b6d4c329c3950d99cec7097/download"
+    }
+  ],
+  "total": 11,
+  "limit": 100,
+  "offset": 0
+}

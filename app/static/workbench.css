@@ -1,0 +1,38 @@
+.mission-workbench{position:relative;margin-block:0 1.1rem;padding:clamp(18px,3vw,32px);border-radius:14px;border:1px solid var(--line);border-inline-start:4px solid var(--brand-gold);background:linear-gradient(115deg,var(--panel),var(--panel2));color:var(--text)}
+.track-header{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:14px}
+.track-header h2,.mission-workbench h3{margin:0;line-height:1.3}
+.track-header h2{font-size:clamp(1.18rem,2vw,1.55rem)}
+.workbench-emblem{width:42px;height:42px;flex:none;border-radius:50%;background:#11213c url('/team-logo.jpg') center 30% / 200% auto no-repeat}
+.track-options{display:flex;flex-wrap:wrap;gap:.4rem;border:0;padding:0;margin:0}
+.track-options label{position:relative;cursor:pointer}
+.track-options input{position:absolute;opacity:0;width:1px;height:1px}
+.track-options span,.track-links a{display:inline-flex;align-items:center;min-height:38px;padding:.45rem .85rem;border-radius:7px}
+.track-options span{color:var(--text);border:1px solid var(--line)}
+.track-options input:checked+span{color:#12233a;background:#e8c77f;border-color:#e8c77f;font-weight:bold}
+.track-options input:focus-visible+span,.track-links a:focus-visible,.inspect-bar:focus-visible{outline:3px solid var(--theme-accent);outline-offset:2px}
+#track-detail{border-top:1px solid var(--line);margin-top:16px;padding-top:16px}
+#track-detail h3{font-size:1.1rem}
+#track-detail p{line-height:1.6;color:var(--muted);margin:.5em 0}
+.track-links{display:flex;flex-wrap:wrap;gap:.4rem}
+.track-links a{color:var(--text);font-weight:600;text-decoration:underline;text-decoration-color:var(--theme-accent);text-underline-offset:4px}
+.track-links a:hover,.track-options label:hover span{box-shadow:inset 0 0 0 1px var(--theme-accent)}
+.compare-note,.compare-result{font-size:.82rem;line-height:1.55;color:var(--text);margin:0}
+.science-bars .inspect-bar{width:100%;min-height:40px;padding:6px;border:1px solid transparent;border-radius:6px;background:transparent;color:var(--text);font:inherit;text-align:start;cursor:pointer}
+.science-bars .inspect-bar>span:first-child{overflow-wrap:anywhere;white-space:normal}
+.science-bars .inspect-bar:hover,.science-bars .inspect-bar[aria-pressed="true"]{border-color:var(--theme-accent);background:var(--theme-accent-soft)}
+.compare-result:not(:empty){display:block;border-inline-start:3px solid var(--brand-gold);padding:.5rem .7rem;background:var(--panel2);overflow-wrap:anywhere}
+body[data-theme="light"] .mission-workbench{color:#142b47;background:linear-gradient(115deg,#fff,#eef4fa)}
+body[data-theme="light"] .mission-workbench p,body[data-theme="light"] .track-links a,body[data-theme="light"] .track-options span,body[data-theme="light"] .compare-note,body[data-theme="light"] .compare-result,body[data-theme="light"] .inspect-bar{color:#233e56}
+body[data-theme="light"] .compare-result:not(:empty),body[data-theme="light"] .inspect-bar:is(:hover,[aria-pressed="true"]){background:#e4eef5}
+@media(max-width:600px){.mission-workbench{padding:16px}.track-options span,.track-links a{min-height:44px}}
+
+
+.earth-guide{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:var(--line);margin:0 0 18px}
+.earth-guide>div{background:var(--panel);padding:16px;min-width:0}
+.earth-guide-icon{display:inline-grid;place-items:center;width:32px;height:32px;border:1px solid var(--theme-accent);border-radius:50%;color:var(--theme-accent);margin-inline-end:9px;font-size:16px}
+.earth-guide strong{color:var(--text);font-size:14px}
+.earth-guide p{color:var(--muted);line-height:1.55;margin:10px 0 0}
+.earth-guide a{display:inline-block;color:var(--text);text-decoration:underline;text-decoration-color:var(--theme-accent);text-underline-offset:4px;margin-top:9px}
+.earth-guide a:focus-visible{outline:3px solid var(--theme-accent);outline-offset:4px}
+body[data-theme="light"] .earth-guide p{color:#435970}
+@media(max-width:700px){.earth-guide{grid-template-columns:1fr}.earth-guide>div{padding:14px}.earth-guide p{margin:7px 0 0}}

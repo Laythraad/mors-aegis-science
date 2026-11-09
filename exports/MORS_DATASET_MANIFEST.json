@@ -1,0 +1,166 @@
+{
+  "product": "MORS Space, Astronomy and Fire Science Raw Data Vault",
+  "retrieved_at_utc": "2026-11-07T13:24:27.126280+00:00",
+  "scope": [
+    "space",
+    "astronomy",
+    "satellite fire observations",
+    "spacecraft fire research"
+  ],
+  "workbook": {
+    "file": "MORS_Space_Astronomy_Fire_Raw_Database.xlsx",
+    "bytes": 48143360,
+    "sha256": "00c36613417543443d8e4f6594c779f2fb93a97df9918acadbabcba17ebd06ae",
+    "password_protected": true,
+    "password_stored_in_manifest": false,
+    "tabular_records": 146580,
+    "fire_cause_and_prevention_guidance_entries": 12,
+    "sheets": [
+      "Overview",
+      "FIRMS Raw",
+      "Exoplanets Raw",
+      "JPL Asteroids",
+      "NASA Research",
+      "Sources & Fields",
+      "Satellite Imagery",
+      "Fire Causes & Prevention"
+    ]
+  },
+  "raw_source_bundle": {
+    "file": "MORS_Raw_Source_Artifacts.zip",
+    "bytes": 26649555,
+    "sha256": "62e9898d8b3bb476c889305f71717c1bcfa52d5962dca65d4ea8d3f3429355d3",
+    "archive_members": 13
+  },
+  "query_database": {
+    "file": "MORS_Science_Catalog.sqlite",
+    "bytes": 52178944,
+    "sha256": "bea57719fd44808e7c62dd257792f851ff6702ea50b097276284cd3060788bcd",
+    "engine": "SQLite read-only indexed projection of the exact raw artifacts"
+  },
+  "datasets": [
+    {
+      "name": "NASA FIRMS worldwide multi-product NRT",
+      "records": 39915,
+      "temporal_scope": "worldwide one-day responses dated 2026-11-07",
+      "source": "https://firms.modaps.eosdis.nasa.gov/api/area/",
+      "product_breakdown": {
+        "VIIRS_NOAA20_NRT": 14146,
+        "VIIRS_NOAA21_NRT": 21813,
+        "MODIS_NRT": 3956,
+        "VIIRS_SNPP_NRT": 0
+      },
+      "limitations": "Product and sensor identity retained. Thermal anomalies are not confirmed fires, perimeters, causes or fire severity; sensor counts are not directly interchangeable."
+    },
+    {
+      "name": "NASA Exoplanet Archive pscomppars",
+      "records": 6464,
+      "fields": 703,
+      "source": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync",
+      "format": "Complete CSV export plus selected core-fields CSV."
+    },
+    {
+      "name": "NASA/JPL SBDB small-body query",
+      "records": 100000,
+      "query": "sb-kind=a; limit=100000; full precision",
+      "source": "https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html"
+    },
+    {
+      "name": "NASA Technical Reports Server",
+      "records": 201,
+      "source": "https://ntrs.nasa.gov/api/openapi/",
+      "limitations": "Bibliographic metadata and abstracts; not raw experiment measurements."
+    },
+    {
+      "name": "NASA GIBS corrected reflectance imagery",
+      "records": 4,
+      "images": [
+        "VIIRS 2025-08-14",
+        "VIIRS 2025-08-15",
+        "VIIRS 2025-08-16",
+        "MODIS Terra 2025-08-15"
+      ],
+      "source": "https://nasa-gibs.github.io/gibs-api-docs/access-basics/",
+      "bbox": "-123,35,-117,42",
+      "crs": "EPSG:4326",
+      "limitations": "Imagery is contextual satellite visualization, not a derived fire perimeter."
+    },
+    {
+      "name": "NIFC / CAL FIRE wildfire cause classification and prevention guidance",
+      "entries": 12,
+      "sources": [
+        "https://www.nifc.gov/fire-information/fire-prevention-education-mitigation/wildfire-investigation",
+        "https://www.readyforwildfire.org/prevent-wildfire/campfire-safety/"
+      ],
+      "limitations": "U.S. category descriptions and prevention summaries; no ignition cause inferred for FIRMS observations."
+    }
+  ],
+  "raw_artifacts": [
+    {
+      "file": "firms_viirs_noaa20_world_2026-11-07.csv",
+      "bytes": 1178241,
+      "sha256": "810854f18457617b680e06914265187ccba13dde5f6d28db92609e4367feb396"
+    },
+    {
+      "file": "firms_viirs_noaa21_nrt_world_2026-11-07.csv",
+      "bytes": 1817482,
+      "sha256": "f27f534827ece2607c84a28018a3935a1e0539b3ff6e2554f1d5bbb022be1cb0"
+    },
+    {
+      "file": "firms_modis_nrt_world_2026-11-07.csv",
+      "bytes": 342003,
+      "sha256": "0783658cc6973a3f77ac32c4fec8a42ec6e8cfbf153082b0988c026e774497ea"
+    },
+    {
+      "file": "firms_viirs_snpp_nrt_world_2026-11-07.csv",
+      "bytes": 122,
+      "sha256": "2b11a44667d05367ecf77651b95fd3d34c545c7ec154856094b91245e41ae697"
+    },
+    {
+      "file": "exoplanets_pscomppars.csv",
+      "bytes": 83121119,
+      "sha256": "e6d70559f167a9fedc3bd5f0bda3f4ef5d7580a2d041c99379543ac14cca6a19"
+    },
+    {
+      "file": "exoplanets_core.csv",
+      "bytes": 1258478,
+      "sha256": "dda0b53613446cadd31b29b270ca3e64343ced4d309fbc6ff4f7b8a087c1a193"
+    },
+    {
+      "file": "jpl_sbdb_asteroids_100000.json",
+      "bytes": 36946946,
+      "sha256": "2ffea248f8d8eb3ac262e1ed12a071aecd1c8f6ffbc8f3b4069fc560f0b29dcd"
+    },
+    {
+      "file": "nasa_ntrs_records.json",
+      "bytes": 448074,
+      "sha256": "964858798bafe580369ce620dfa455464ee2ba8bd33f0b3719bdef96ffaa52ca"
+    },
+    {
+      "file": "gibs_viirs_2025-08-14_california.png",
+      "bytes": 609055,
+      "sha256": "90fb706c54710a2782cffa575ce9da862b5c28b2be290e344aa60ff1802e440e"
+    },
+    {
+      "file": "gibs_viirs_2025-08-15_california.png",
+      "bytes": 613539,
+      "sha256": "659f57a037bf8444dd89f8d791d5413e11b19ad058508771820c2f973df24047"
+    },
+    {
+      "file": "gibs_viirs_2025-08-16_california.png",
+      "bytes": 621164,
+      "sha256": "531dc598d2e636160af6f321c700555862390479b85e359b7b6130e03eee6157"
+    },
+    {
+      "file": "gibs_modis_2025-08-15_california.png",
+      "bytes": 591533,
+      "sha256": "5b41e13f82fa73609c25d13e4cae946694aa6655768d1939ddd698e64b8f88aa"
+    },
+    {
+      "file": "fire_cause_prevention_guidance.json",
+      "bytes": 6352,
+      "sha256": "14037f110d7880d7e7869892bbbe9fa1feb3b6a2f7e5fab12b1f7b48a6e808ec"
+    }
+  ],
+  "methods_note": "No synthetic scientific measurements were added. Blank provider values remain blank. Exact provider artifacts are preserved separately from the encrypted workbook. Workbook numeric values use spreadsheet numeric types; use archived exact CSV/JSON plus SHA-256 when byte-level fidelity or numeric precision beyond spreadsheet limits is needed."
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "cause": "Lightning (natural)",
+    "origin": "Natural ignition; distinct from human-caused categories.",
+    "prevention": "This is not generally preventable at ignition. Use local alerts, defensible-space practices, and emergency guidance to reduce exposure and consequences.",
+    "scope": "NIFC distinguishes natural causes, generally lightning, from human activity. This guidance is not derived from FIRMS.",
+    "source_url": "https://www.nifc.gov/fire-information/fire-prevention-education-mitigation/wildfire-investigation"
+  },
+  {
+    "cause": "Arson",
+    "origin": "Deliberate or malicious ignition; investigation establishes origin and cause.",
+    "prevention": "Report unusual activity to authorities with dates, times, locations, and descriptions; do not confront suspects.",
+    "scope": "Cause determination requires investigation; a satellite hotspot cannot establish arson.",
+    "source_url": "https://www.nifc.gov/fire-information/fire-prevention-education-mitigation/wildfire-investigation"
+  },
+  {
+    "cause": "Debris and open burning",
+    "origin": "Escaped burn piles, burn barrels, yard debris, and other open burns.",
+    "prevention": "Check local permits and restrictions; clear combustibles around small piles; keep water and a shovel nearby; attend until fully out; avoid unsafe wind/dry conditions.",
+    "scope": "NIFC guidance includes a 4 ft maximum pile diameter and 10 ft clearance; local law and conditions govern.",
+    "source_url": "https://www.nifc.gov/fire-information/fire-prevention-education-mitigation/wildfire-investigation"
+  },
+  {
+    "cause": "Equipment and vehicle use",
+    "origin": "Vehicles, engines, tools, hot work, dragging metal, exhaust, or mechanical failure.",
+    "prevention": "Maintain equipment; secure trailer chains; check tires, brakes, and dragging parts; follow local restrictions during fire danger.",
+    "scope": "Examples and maintenance guidance summarized from NIFC.",
+    "source_url": "https://www.nifc.gov/fire-information/fire-prevention-education-mitigation/wildfire-investigation"
+  },
+  {
+    "cause": "Firearms and explosives use",
+    "origin": "Projectiles, hot fragments, exploding targets, flares, and incendiary/tracer ammunition.",
+    "prevention": "Check restrictions; avoid prohibited ammunition/exploding targets; place targets on dirt or gravel away from vegetation; carry water or an extinguisher.",
+    "scope": "NIFC describes ignition pathways and jurisdiction-dependent restrictions.",
+    "source_url": "https://www.nifc.gov/fire-information/fire-prevention-education-mitigation/wildfire-investigation"
+  },
+  {
+    "cause": "Fireworks",
+    "origin": "Ground, handheld, aerial, and explosive fireworks can send hot material into vegetation.",
+    "prevention": "Follow local law and fire restrictions; fireworks may be prohibited on public lands or during high danger; use only where legal.",
+    "scope": "Legal restrictions vary by location and date; consult local authorities.",
+    "source_url": "https://www.nifc.gov/fire-information/fire-prevention-education-mitigation/wildfire-investigation"
+  },
+  {
+    "cause": "Misuse of fire by minors",
+    "origin": "Includes fires started by children and adolescents.",
+    "prevention": "Supervise children; store matches and lighters out of reach; teach that ignition tools are not toys; contact fire professionals if fire-setting behavior occurs.",
+    "scope": "NIFC prevention guidance; not a prediction about individuals.",
+    "source_url": "https://www.nifc.gov/fire-information/fire-prevention-education-mitigation/wildfire-investigation"
+  },
+  {
+    "cause": "Power generation / transmission / distribution",
+    "origin": "Arcing, equipment failure, vegetation contact, and power-line events.",
+    "prevention": "Stay away from lines and electrical equipment; report vegetation contact to the utility; leave clearance and maintenance work to professionals.",
+    "scope": "NIFC advises professional maintenance and utility notification.",
+    "source_url": "https://www.nifc.gov/fire-information/fire-prevention-education-mitigation/wildfire-investigation"
+  },
+  {
+    "cause": "Railroad operations and maintenance",
+    "origin": "Hot work, rail grinding, equipment, exhaust, brakes, derailment, and right-of-way work.",
+    "prevention": "Rail operators and work crews should use fire prevention procedures and investigate/report ignition incidents; NIFC links to NWCG investigation training.",
+    "scope": "Summary of NIFC classification; operational controls depend on rail authority and conditions.",
+    "source_url": "https://www.nifc.gov/fire-information/fire-prevention-education-mitigation/wildfire-investigation"
+  },
+  {
+    "cause": "Recreation and ceremony",
+    "origin": "Improperly built, unattended, abandoned, or incompletely extinguished campfires and related devices.",
+    "prevention": "Check restrictions; clear a 10 ft radius; keep adult supervision, water, and shovel; extinguish with “drown, stir & feel” until cool.",
+    "scope": "CAL FIRE page gives campfire guidance for California; rules differ elsewhere.",
+    "source_url": "https://www.readyforwildfire.org/prevent-wildfire/campfire-safety/"
+  },
+  {
+    "cause": "Smoking",
+    "origin": "Discarded cigarettes, matches, cigars, and other smoking materials.",
+    "prevention": "Check local restrictions; use only permitted cleared areas when restrictions allow; fully extinguish and dispose of materials safely.",
+    "scope": "NIFC notes restrictions vary by jurisdiction and fire stage.",
+    "source_url": "https://www.nifc.gov/fire-information/fire-prevention-education-mitigation/wildfire-investigation"
+  },
+  {
+    "cause": "Other causes",
+    "origin": "NIFC examples include electric fences, glass refraction, spontaneous heating, and structures.",
+    "prevention": "Maintain ignition-capable equipment; keep dry vegetation away from electrical equipment; safely manage oily rags/organic piles; supervise magnifying tools around children.",
+    "scope": "NIFC “other” examples are heterogeneous; each requires cause-specific investigation and prevention.",
+    "source_url": "https://www.nifc.gov/fire-information/fire-prevention-education-mitigation/wildfire-investigation"
+  }
+]
