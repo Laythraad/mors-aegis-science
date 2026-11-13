@@ -22,3 +22,8 @@ body[data-theme="light"] .metric-label,body[data-theme="light"] .metric-sub,body
 body[data-theme="light"] .chart-axis{fill:#40566b}
 @media(max-width:700px){.sidebar{z-index:11}.nav-item{min-height:44px}.mobile-menu{min-width:44px;min-height:44px}.metric-label,.metric-sub,.experiment-table td,.experiment-table th,.footer{font-size:11px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+/* Shared form controls for the scientific workspaces, preserving existing themes. */
+.content :is(input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea){min-width:0;max-width:100%;min-height:42px;padding:9px 11px;border:1px solid #64839c;border-radius:7px;background:#0b1828;color:#edf4fa;font:inherit;line-height:1.4}
+.content :is(input,select,textarea):disabled{opacity:.65;cursor:not-allowed}
+.content input[type=file]{max-width:100%;color:var(--text);font:inherit}.content input[type=file]::file-selector-button{padding:9px 12px;margin-inline-end:10px;border:1px solid #64839c;border-radius:7px;background:#17304a;color:#edf4fa;cursor:pointer}
+body[data-theme="light"] .content :is(input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),select,textarea){background:#fff;color:#172c42;border-color:#8198ac}

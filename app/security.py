@@ -5,6 +5,7 @@ import hmac
 import json
 import os
 import re
+import secrets
 import threading
 import time
 from collections import defaultdict, deque
@@ -14,6 +15,38 @@ from fastapi import HTTPException, Request
 
 _attempts: dict[str, deque[float]] = defaultdict(deque)
 _lock = threading.Lock()
+_sessions: dict[str, tuple[str, float]] = {}
+_SESSION_TTL = 8 * 60 * 60
+
+
+def issue_session(owner: str) -> str:
+    token = secrets.token_urlsafe(32)
+    digest = __import__('hashlib').sha256(token.encode()).hexdigest()
+    now = time.monotonic()
+    with _lock:
+        for key, (_, expires) in list(_sessions.items()):
+            if expires <= now:
+                del _sessions[key]
+        while len(_sessions) >= 1024:
+            del _sessions[next(iter(_sessions))]
+        _sessions[digest] = (owner, now + _SESSION_TTL)
+    return token
+
+
+def session_owner(token: str) -> str | None:
+    digest = __import__('hashlib').sha256(token.encode()).hexdigest()
+    with _lock:
+        item = _sessions.get(digest)
+        if item and item[1] > time.monotonic():
+            return item[0]
+        _sessions.pop(digest, None)
+    return None
+
+
+def revoke_session(token: str) -> None:
+    digest = __import__('hashlib').sha256(token.encode()).hexdigest()
+    with _lock:
+        _sessions.pop(digest, None)
 
 
 def configured_users() -> dict[str, str]:

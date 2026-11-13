@@ -1,3 +1,9 @@
+// Exported spreadsheet text must not execute as a formula when opened in Excel.
+function safeSpreadsheetCell(value) {
+  if (value === null || value === undefined) return '';
+  const text = String(value);
+  return typeof value === 'string' && /^[\s\u0000-\u001f]*[=+@-]/.test(text) ? "'" + text : text;
+}
 // All route names refer to existing application views. No source requests are made here.
 const missionTracks = [
   { name:['Combustion','الاحتراق'], question:['What can an image tell us about a flame?','ماذا تخبرنا الصورة عن اللهب؟'],

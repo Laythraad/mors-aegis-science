@@ -139,7 +139,7 @@ def analyze_csv_timeseries(content: bytes) -> dict[str, Any]:
             "anomalies": [{"row_index": i, "timestamp": times[i].isoformat(), "value": values[i],
                            "modified_z_score": robust_z[i], "method": anomaly_method} for i in anomaly_indices],
             "anomaly_method": anomaly_method,
-            "time_series": [{"timestamp": t.isoformat(), "value": v, "row_index": i}
+            "time_series": [{"timestamp": t.isoformat(), "elapsed_seconds": seconds[i], "value": v, "row_index": i}
                             for i, (t, v) in enumerate(zip(times, values))],
             "validation": {"status": "passed_with_flags" if missing_values or duplicate_timestamps else "passed",
                            "checks": {"utf8_csv": True, "required_columns": True, "finite_numeric_values": True,
