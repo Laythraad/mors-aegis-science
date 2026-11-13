@@ -66,6 +66,17 @@ def test_https_proxy_can_require_secure_cookie(client, monkeypatch):
     assert '; secure' in response.headers['set-cookie'].lower()
 
 
+def test_unauthenticated_api_and_secret_paths_are_not_exposed(client):
+    client.headers.pop('Authorization')
+    assert client.get('/api/mission').status_code == 401
+    for path in ('/.env', '/%2e%2e/.env', '/openapi.json'):
+        assert client.get(path).status_code == 404
+    response = client.post('/api/session', json={'token': 'test-only-secret-0123456789abcdef'},
+                           headers={'Origin': 'https://untrusted.example'})
+    assert response.status_code == 403
+    assert 'aegis_session' not in response.cookies
+
+
 def test_ollama_health_does_not_confuse_different_model_tags(client, monkeypatch):
     import app.main as main
     monkeypatch.setenv('OLLAMA_MODEL', 'qwen2.5:3b')
