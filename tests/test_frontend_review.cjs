@@ -17,6 +17,12 @@ const x = [...host.innerHTML.matchAll(/<rect class="chart-point"[^>]* x="([\d.]+
 assert.equal(x.length, 3);
 assert.ok(x[1] > x[0], 'same-day products have separate bars');
 assert.ok(x[2] - x[0] > 10 * (x[1] - x[0]), 'date gaps occupy proportional horizontal space');
+const scatterCode=source.slice(source.indexOf('function renderFRPScatter(items)'),source.indexOf('function bindSpaceTimeView()'));
+vm.runInNewContext(scatterCode,context);
+context.renderFRPScatter([{bright_ti4_k:300,frp_mw:5,observed_at_utc:'2026-01-01',product:'VIIRS'},{bright_ti4_k:400,frp_mw:25,observed_at_utc:'2026-01-02',product:'VIIRS'}]);
+assert.match(host.innerHTML,/>300\.0<\/text>/);
+assert.match(host.innerHTML,/>400\.0<\/text>/);
+assert.match(host.innerHTML,/>25\.0<\/text>/);
 assert.match(source, /Only the current page of up to 200 records is plotted/);
 assert.match(source, /pitchPublications\.textContent=Number\(c\.publications\)/);
 console.log('Frontend chart and live-count checks passed');
